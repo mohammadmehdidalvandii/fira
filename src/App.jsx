@@ -2,7 +2,7 @@
 
 function App() {
   return (
-    <div className="container">
+    <div className="container text-md">
         محمدمهدی دالوندی
     </div>
   )

@@ -11,6 +11,9 @@ export default {
         "dana-bold" : "danaBold",
         "dana-black" : "danaBlack",
       },
+      fontSize:{
+        "md": "2rem"
+      },
       colors:{
         "primary": "#086AD8",
         "secondary" : "#212121",
