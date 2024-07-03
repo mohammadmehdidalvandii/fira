@@ -1,10 +1,11 @@
+import Navbar from "./components/module/Navbar/Navbar"
 
 
 function App() {
   return (
-    <div className="container text-md">
-        محمدمهدی دالوندی
-    </div>
+    <>
+      <Navbar/>
+    </>
   )
 }
 
