@@ -2,7 +2,9 @@
 
 function App() {
   return (
-    <div className="text-center text-2xl font-dana-medium">محمدمهدی </div>
+    <div className="container">
+        محمدمهدی دالوندی
+    </div>
   )
 }
 

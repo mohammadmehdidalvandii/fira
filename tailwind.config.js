@@ -18,6 +18,18 @@ export default {
         "textColor" : "#666666",
       }
     },
+    container:{
+      "center" : true,
+    },
+    screens:{
+      'sm': '576px',
+
+      'md': '768px',
+
+      'lg': '992px',
+
+      'xl': '1220px',
+    }
   },
   plugins: [],
 }
