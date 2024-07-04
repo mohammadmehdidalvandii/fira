@@ -16,6 +16,6 @@
     src: url(/public/assets/font/Dana-Black.woff) format(woff);
   }
   body{
-    @apply m-0 p-0 box-border font-dana-medium text-base 
+    @apply m-0 p-0 px-2 box-border font-dana-medium text-base 
   }
 }
