@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaSearch, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [isSearch, setIsSearch] = useState(false);
+  const [locationMenu , setLocationMenu] = useState('/');
+  
+  const location = useLocation();
+
+  useEffect(()=>{
+    const pathName = location.pathname;
+    setLocationMenu(pathName);
+  },[location])
+
   const handlerSearchbox = () => {
     setIsSearch(!isSearch);
   };
@@ -19,7 +28,7 @@ function Navbar() {
             <li className="block">
               <Link
                 to="/"
-                className="font-dana-bold text-secondary ease-linear delay-300 hover:text-primary"
+                className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${locationMenu === '/' ? "text-primary":""}`}
               >
                 خانه
               </Link>
@@ -27,7 +36,7 @@ function Navbar() {
             <li className="block">
               <Link
                 to="/About"
-                className="font-dana-bold text-secondary ease-linear delay-300 hover:text-primary"
+                className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${locationMenu === '/About' ? "text-primary":""}`}
               >
                 درباره ما
               </Link>
@@ -35,7 +44,7 @@ function Navbar() {
             <li className="block">
               <Link
                 to="/Services"
-                className="font-dana-bold text-secondary ease-linear delay-300 hover:text-primary"
+                className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${locationMenu === '/Services' ? "text-primary":""}`}
               >
                 خدمات
               </Link>
@@ -43,7 +52,7 @@ function Navbar() {
             <li className="block">
               <Link
                 to="/Project"
-                className="font-dana-bold text-secondary ease-linear delay-300 hover:text-primary"
+                className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${locationMenu === '/Project' ? "text-primary":""}`}
               >
                 پروژه ها
               </Link>
@@ -51,7 +60,7 @@ function Navbar() {
             <li className="block">
               <Link
                 to="/Article"
-                className="font-dana-bold text-secondary ease-linear delay-300 hover:text-primary"
+                className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${locationMenu === '/Article' ? "text-primary":""}`}
               >
                 وبلاگ
               </Link>
@@ -59,7 +68,7 @@ function Navbar() {
             <li className="block">
               <Link
                 to="/Contact"
-                className="font-dana-bold text-secondary ease-linear delay-300 hover:text-primary"
+                className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${locationMenu === '/Contact' ? "text-primary":""}`}
               >
                 تماس با ما
               </Link>
