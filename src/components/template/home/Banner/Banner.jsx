@@ -1,6 +1,6 @@
 function Banner() {
   return (
-    <section className="block w-full">
+    <section className="block w-full mb-8">
       <div className="container">
         <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-2">
           <div className="block w-full">
@@ -14,7 +14,7 @@ function Banner() {
               </p>
             </div>
           </div>
-          <div className="block">
+          <div className="hidden md:block">
                 <div className="flex relative mt-24">
                     <img src="/assets/images/1.png" alt="image banner" className="block absolute top-1 left-0" />
                     <img src="/assets/images/2.png" alt="image banner" className="block absolute top-0 right-0" />
