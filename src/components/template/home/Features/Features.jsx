@@ -7,7 +7,7 @@ import { GiTeamIdea } from "react-icons/gi";
 
 function Features() {
   return (
-   <section className="block w-full sm:mt-8 md:mt-48 border-t border-gray-400 pt-12 mb-12">
+   <section className="block w-full sm:mt-8 md:mt-48 border-t border-gray-400 pt-12">
         <div className="container">
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <div className="flex justify-center items-center flex-col w-full bg-slate-200 rounded-lg p-4 ease-linear delay-300 cursor-pointer">
