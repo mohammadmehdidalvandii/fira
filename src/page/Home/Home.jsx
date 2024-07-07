@@ -1,5 +1,6 @@
 import Banner from "../../components/template/home/Banner/Banner"
 import Digital from "../../components/template/home/Digital/Digital"
+import Experience from "../../components/template/home/Experience/Experience"
 import Features from "../../components/template/home/Features/Features"
 import Services from "../../components/template/home/Services/Services"
 import Technology from "../../components/template/home/Technology/Technology"
@@ -12,6 +13,7 @@ function Home() {
     <Technology/>
     <Digital/>
     <Services/>
+    <Experience/>
     <br /><br /><br /><br /><br /><br />
    </>
   )
