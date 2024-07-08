@@ -1,3 +1,4 @@
+import Articles from "../../components/template/home/Articles/Articles"
 import Banner from "../../components/template/home/Banner/Banner"
 import Digital from "../../components/template/home/Digital/Digital"
 import Experience from "../../components/template/home/Experience/Experience"
@@ -20,6 +21,7 @@ function Home() {
     <Tab/>
     <Team/>
     <Question/>
+    <Articles/>
     <br /><br /><br /><br /><br /><br />
    </>
   )
