@@ -1,4 +1,3 @@
-import Footer from "../../components/module/Footer/Footer"
 import Articles from "../../components/template/home/Articles/Articles"
 import Banner from "../../components/template/home/Banner/Banner"
 import Digital from "../../components/template/home/Digital/Digital"
@@ -23,7 +22,6 @@ function Home() {
     <Team/>
     <Question/>
     <Articles/>
-    <Footer/>
    </>
   )
 }
