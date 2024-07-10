@@ -7,6 +7,21 @@ function Navbar() {
   const [isSearch, setIsSearch] = useState(false);
   const [locationMenu, setLocationMenu] = useState("/");
   const [activeNavbarMenu, setActiveNavbarMenu] = useState(false);
+  const [navbarFixedTop , setNavbarFixedTop] = useState(false);
+
+  useEffect(()=>{
+    const fixedNavbarTop = ()=>{
+      const currentScroll = window.pageYOffset;
+      if(currentScroll > 105){
+        setNavbarFixedTop(true);
+      }else{
+        setNavbarFixedTop(false);
+      }
+    }
+
+    window.addEventListener("scroll", fixedNavbarTop);
+    return ()=> window.removeEventListener("scroll" , fixedNavbarTop);
+  },[])
 
   const handlerActiveMenuNav = () => {
     setActiveNavbarMenu(!activeNavbarMenu);
@@ -24,7 +39,7 @@ function Navbar() {
   };
   return (
     <>
-      <section className="hidden lg:block py-4 bg-white">
+      <section className={navbarFixedTop?"hidden lg:block py-4 bg-white fixed left-0 right-0 shadow-md shadow-gray-200 z-[999] animate-fadeInDownBig":"hidden lg:block py-4 bg-white"}>
         <div className="container">
           <div className="flex items-center justify-between">
             <Link to="/" className="no-underline">
@@ -135,7 +150,7 @@ function Navbar() {
         </div>
       </section>
 
-      <section className="block lg:hidden py-4 bg-white">
+      <section className={navbarFixedTop ? "block lg:hidden py-4 bg-white fixed left-0 right-0 shadow-md shadow-gray-200 z-[999] animate-fadeInDownBig" :"block lg:hidden py-4 bg-white"}>
         <div className="container">
           <div className="flex justify-between items-center relative">
             <Link to="/" className="block">

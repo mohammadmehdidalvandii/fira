@@ -33,6 +33,15 @@ export default {
       'lg': '992px',
 
       'xl': '1220px',
+    },
+    animation:{
+      fadeInDownBig: "fadeInDownBig 0.4s ease-in-out "
+    },
+    keyframes:{
+      fadeInDownBig:{
+        "0%":{transform:" translate3d(0, -100%, 0)"},
+        "100":{transform: "none"}
+      }
     }
   },
   plugins: [],
