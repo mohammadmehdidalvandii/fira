@@ -50,8 +50,8 @@ function Navbar() {
               <li className="block">
                 <Link
                   to="/"
-                  className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                    locationMenu === "/" ? "text-primary" : ""
+                  className={` ${
+                    locationMenu === "/" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
                   }`}
                 >
                   خانه
@@ -60,8 +60,8 @@ function Navbar() {
               <li className="block">
                 <Link
                   to="/About"
-                  className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                    locationMenu === "/About" ? "text-primary" : ""
+                  className={` ${
+                    locationMenu === "/About" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
                   }`}
                 >
                   درباره ما
@@ -70,8 +70,9 @@ function Navbar() {
               <li className="block">
                 <Link
                   to="/Services"
-                  className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                    locationMenu === "/Services" ? "text-primary" : ""
+                  className={`${
+                    locationMenu === "/Service" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+
                   }`}
                 >
                   خدمات
@@ -80,8 +81,9 @@ function Navbar() {
               <li className="block">
                 <Link
                   to="/Project"
-                  className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                    locationMenu === "/Project" ? "text-primary" : ""
+                  className={`${
+                    locationMenu === "/Project" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+
                   }`}
                 >
                   پروژه ها
@@ -90,8 +92,9 @@ function Navbar() {
               <li className="block">
                 <Link
                   to="/Article"
-                  className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                    locationMenu === "/Article" ? "text-primary" : ""
+                  className={`${
+                    locationMenu === "/Articles" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+
                   }`}
                 >
                   وبلاگ
@@ -100,8 +103,9 @@ function Navbar() {
               <li className="block">
                 <Link
                   to="/Contact"
-                  className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                    locationMenu === "/Contact" ? "text-primary" : ""
+                  className={`${
+                    locationMenu === "/Contact" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+
                   }`}
                 >
                   تماس با ما
@@ -177,8 +181,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/Login"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/Login" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/Login" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       ورود
@@ -187,8 +192,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       خانه
@@ -197,8 +203,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/About"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/About" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/About" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       درباه ما
@@ -207,8 +214,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/Services"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/Services" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/Service" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       خدمات
@@ -217,8 +225,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/Project"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/Project" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/Project" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       پروژه ها
@@ -227,8 +236,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/Article"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/Article" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/Article" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       وبلاگ
@@ -237,8 +247,9 @@ function Navbar() {
                   <li className="block w-full mb-6">
                     <Link
                       to="/Contact"
-                      className={`font-dana-bold text-secondary ease-linear delay-300 hover:text-primary ${
-                        locationMenu === "/Contact" ? "text-primary" : ""
+                      className={`${
+                        locationMenu === "/Contact" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+    
                       }`}
                     >
                       تماس با ما
