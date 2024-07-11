@@ -1,8 +1,11 @@
+import Breadcrumb from "../../components/module/Breadcrumb/Breadcrumb"
 
 
 function About() {
   return (
-    <div>About</div>
+  <>
+    <Breadcrumb title="درباه ما" subtitle="درباه ما"/>
+  </>
   )
 }
 
