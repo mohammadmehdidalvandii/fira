@@ -20,7 +20,7 @@ function ScrollToTop() {
         });
     };
   return (
-    <button className={isVisible ? "flex justify-center items-center w-12 h-12 bg-primary text-white text-md rounded-[50%] fixed bottom-16 right-6" :"hidden"} onClick={handlerScrollTo}>
+    <button className={isVisible ? "flex justify-center items-center w-12 h-12 bg-primary text-white text-md rounded-[50%] fixed bottom-16 right-6 ease-out duration-300 hover:bg-primary-100" :"hidden"} onClick={handlerScrollTo}>
         <MdKeyboardArrowUp/>
     </button>
   )
