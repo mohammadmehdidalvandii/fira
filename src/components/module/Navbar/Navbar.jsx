@@ -91,7 +91,7 @@ function Navbar() {
               </li>
               <li className="block">
                 <Link
-                  to="/Article"
+                  to="/Articles"
                   className={`${
                     locationMenu === "/Articles" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
 
@@ -237,7 +237,7 @@ function Navbar() {
                     <Link
                       to="/Article"
                       className={`${
-                        locationMenu === "/Article" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+                        locationMenu === "/Articles" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
     
                       }`}
                     >
