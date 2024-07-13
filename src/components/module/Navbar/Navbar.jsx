@@ -71,7 +71,7 @@ function Navbar() {
                 <Link
                   to="/Services"
                   className={`${
-                    locationMenu === "/Service" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+                    locationMenu === "/Services" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
 
                   }`}
                 >
@@ -215,7 +215,7 @@ function Navbar() {
                     <Link
                       to="/Services"
                       className={`${
-                        locationMenu === "/Service" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
+                        locationMenu === "/Services" ? "font-dana-bold  text-primary" : "font-dana-bold text-secondary ease-linear duration-300 hover:text-primary"
     
                       }`}
                     >
