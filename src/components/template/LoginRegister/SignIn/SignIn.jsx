@@ -9,7 +9,7 @@ function SignIn() {
             <h6 className="block font-dana-bold text-3xl">خوش آمدید</h6>
             <span className="block mt-3 text-textColor text-sm">لطفا وارد حساب کاربری بشوید!</span>
           </div>
-          <form action="#" className="block">
+          <form action="#" className="block mt-4">
                 <input type="text" className="block outline-none border border-gray-400 w-full h-12 rounded-md pr-3 focus:border-primary mb-6" placeholder="ایمیل"/>
                 <input type="text" className="block outline-none border border-gray-400 w-full h-12 rounded-md pr-3 focus:border-primary mb-6" placeholder="رمز عبور"/>
                 <div className="flex flex-col sm:flex-row items-center justify-between ">
@@ -24,7 +24,7 @@ function SignIn() {
                 <button className="button-primary w-full">ورود</button>
                 <div className="flex items-center my-4 ">
                     <span className="block text-textColor">حساب کاربری ندارید ؟</span>
-                    <Link to='/' className="block pr-2 text-primary hover:text-secondary">ثبت نام</Link>
+                    <Link to='/Register' className="block pr-2 text-primary hover:text-secondary">ثبت نام</Link>
                 </div>
           </form>
         </div>
