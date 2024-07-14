@@ -4,6 +4,7 @@ import Services from "./page/Services/Services";
 import Project from "./page/Project/Project";
 import Articles from "./page/Articles/Articles";
 import Contact from "./page/Contact/Contact";
+import Login from "./page/Login/Login";
 
 const routes = [
     {path:"/" , element:<Home/>},
@@ -12,6 +13,7 @@ const routes = [
     {path:"/Project" , element:<Project/>},
     {path:"/Articles" , element:<Articles/>},
     {path:"/Contact" , element:<Contact/>},
+    {path:"/Login" , element:<Login/>},
 ]
 
 export default routes;
