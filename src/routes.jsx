@@ -5,6 +5,7 @@ import Project from "./page/Project/Project";
 import Articles from "./page/Articles/Articles";
 import Contact from "./page/Contact/Contact";
 import Login from "./page/Login/Login";
+import Register from "./page/Register/Register";
 
 const routes = [
     {path:"/" , element:<Home/>},
@@ -14,6 +15,8 @@ const routes = [
     {path:"/Articles" , element:<Articles/>},
     {path:"/Contact" , element:<Contact/>},
     {path:"/Login" , element:<Login/>},
+    {path:"/Register" , element:<Register/>},
+    
 ]
 
 export default routes;
