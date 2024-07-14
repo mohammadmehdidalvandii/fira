@@ -20,8 +20,8 @@ function SingUp() {
               </div>
               <button className="button-primary w-full">ورود</button>
               <div className="flex items-center my-4 ">
-                  <span className="block text-textColor">حساب کاربری ندارید ؟</span>
-                  <Link to='/Login' className="block pr-2 text-primary hover:text-secondary">ثبت نام</Link>
+                  <span className="block text-textColor">آیا قبلا ثبت نام کردید ؟</span>
+                  <Link to='/Login' className="block pr-2 text-primary hover:text-secondary">ورود</Link>
               </div>
         </form>
       </div>
