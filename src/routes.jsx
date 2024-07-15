@@ -5,6 +5,7 @@ import ServicesDetails from "./page/ServicesDetails/ServicesDetails";
 import Project from "./page/Project/Project";
 import ProjectDetails from "./page/ProjectDetails/ProjectDetails";
 import Articles from "./page/Articles/Articles";
+import ArticleDetails from "./page/ArticleDetails/ArticleDetails";
 import Contact from "./page/Contact/Contact";
 import Login from "./page/Login/Login";
 import Register from "./page/Register/Register";
@@ -17,6 +18,7 @@ const routes = [
     {path:"/Project" , element:<Project/>},
     {path:"/Project-D" , element:<ProjectDetails/>},
     {path:"/Articles" , element:<Articles/>},
+    {path:"/Article-D" , element:<ArticleDetails/>},
     {path:"/Contact" , element:<Contact/>},
     {path:"/Login" , element:<Login/>},
     {path:"/Register" , element:<Register/>},
