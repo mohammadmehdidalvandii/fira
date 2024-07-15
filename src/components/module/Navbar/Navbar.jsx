@@ -39,7 +39,7 @@ function Navbar() {
   };
   return (
     <>
-      <section className={navbarFixedTop?"hidden lg:block py-4 bg-white fixed left-0 right-0 shadow-md shadow-gray-200 z-[999] animate-fadeInDownBig":"hidden lg:block py-4 bg-white"}>
+      <section className={navbarFixedTop?"hidden lg:block py-4 mx-3 bg-white fixed left-0 right-0 shadow-md shadow-gray-200 z-[999] animate-fadeInDownBig":"hidden lg:block py-4 mx-2 bg-white"}>
         <div className="container">
           <div className="flex items-center justify-between">
             <Link to="/" className="no-underline">
@@ -154,7 +154,7 @@ function Navbar() {
         </div>
       </section>
 
-      <section className={navbarFixedTop ? "block lg:hidden py-4 bg-white fixed left-0 right-0 shadow-md shadow-gray-200 z-[999] animate-fadeInDownBig" :"block lg:hidden py-4 bg-white"}>
+      <section className={navbarFixedTop ? "block lg:hidden py-4 mx-3 bg-white fixed left-0 right-0 shadow-md shadow-gray-200 z-[999] animate-fadeInDownBig" :"block lg:hidden py-4 mx-2 bg-white"}>
         <div className="container">
           <div className="flex justify-between items-center relative">
             <Link to="/" className="block">
