@@ -1,5 +1,15 @@
+import { useEffect, useState } from 'react';
 import ServiceCard from '../../../module/ServiceCard/ServiceCard';
 function Service() {
+  const [itemServices , setItemServices] = useState([]);
+  useEffect(()=>{
+      const fetchData = async() =>{
+        const res = await fetch("http://localhost:3000/services");
+        const data = await res.json();
+        setItemServices(data);
+      }
+      fetchData();
+  },[])
   return (
     <section className="block w-full bg-success mt-12 py-16">
       <div className="container">
@@ -15,12 +25,9 @@ function Service() {
             </p>
           </div>
           <div className="grid mt-8 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
+          {itemServices.map((item)=>(
+                <ServiceCard key={item.id} {...item}/>
+              ))}
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ const routes = [
     {path:"/" , element:<Home/>},
     {path:"/About" , element:<About/>},
     {path:"/Services" , element:<Services/>},
-    {path:"/Services-D" , element:<ServicesDetails/>},
+    {path:"/Services-D/:id" , element:<ServicesDetails/>},
     {path:"/Project" , element:<Project/>},
     {path:"/Project-D" , element:<ProjectDetails/>},
     {path:"/Articles" , element:<Articles/>},
