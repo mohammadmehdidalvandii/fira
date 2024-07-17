@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Dashboard from "../../components/template/admin/Dashboard";
+import Articles from "../../components/template/admin/Articles";
 
 
 function Admin() {
@@ -50,7 +51,7 @@ function Admin() {
             </div>
             <div className="w-[80%] bg-success p-4 rounded-lg">
                 {isAdminMenu === "dashboard" && (<Dashboard/>)}
-                {isAdminMenu === "articles" && (<h1>articles</h1>)}
+                {isAdminMenu === "articles" && (<Articles/>)}
                 {isAdminMenu === "projects" && (<h1>projects</h1>)}
                 {isAdminMenu === "info" && (<h1>info</h1>)}
                 {isAdminMenu === "list-user" && (<h1>list-user</h1>)}
