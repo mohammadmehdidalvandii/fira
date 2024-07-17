@@ -1,5 +1,5 @@
 import { useState } from "react"
-import PageHeader from "../../components/module/PageHeader/PageHeader";
+import Dashboard from "../../components/template/admin/Dashboard";
 
 
 function Admin() {
@@ -49,7 +49,7 @@ function Admin() {
                 </div>
             </div>
             <div className="w-[80%] bg-success p-4 rounded-lg">
-                {isAdminMenu === "dashboard" && (<h1>dashboard</h1>)}
+                {isAdminMenu === "dashboard" && (<Dashboard/>)}
                 {isAdminMenu === "articles" && (<h1>articles</h1>)}
                 {isAdminMenu === "projects" && (<h1>projects</h1>)}
                 {isAdminMenu === "info" && (<h1>info</h1>)}
