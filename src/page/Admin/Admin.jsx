@@ -2,6 +2,7 @@ import { useState } from "react"
 import Dashboard from "../../components/template/admin/Dashboard";
 import Articles from "../../components/template/admin/Articles";
 import Projects from "../../components/template/admin/Projects";
+import Info from "../../components/template/admin/Info";
 
 
 function Admin() {
@@ -54,7 +55,7 @@ function Admin() {
                 {isAdminMenu === "dashboard" && (<Dashboard/>)}
                 {isAdminMenu === "articles" && (<Articles/>)}
                 {isAdminMenu === "projects" && (<Projects/>)}
-                {isAdminMenu === "info" && (<h1>info</h1>)}
+                {isAdminMenu === "info" && (<Info/>)}
                 {isAdminMenu === "list-user" && (<h1>list-user</h1>)}
             </div>
         </div>
