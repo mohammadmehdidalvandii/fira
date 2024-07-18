@@ -3,6 +3,7 @@ import Dashboard from "../../components/template/admin/Dashboard";
 import Articles from "../../components/template/admin/Articles";
 import Projects from "../../components/template/admin/Projects";
 import Info from "../../components/template/admin/Info";
+import UserList from "../../components/template/admin/UserList";
 
 
 function Admin() {
@@ -56,7 +57,7 @@ function Admin() {
                 {isAdminMenu === "articles" && (<Articles/>)}
                 {isAdminMenu === "projects" && (<Projects/>)}
                 {isAdminMenu === "info" && (<Info/>)}
-                {isAdminMenu === "list-user" && (<h1>list-user</h1>)}
+                {isAdminMenu === "list-user" && (<UserList/>)}
             </div>
         </div>
     </section>
