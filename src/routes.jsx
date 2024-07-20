@@ -10,6 +10,7 @@ import Contact from "./page/Contact/Contact";
 import Login from "./page/Login/Login";
 import Register from "./page/Register/Register";
 import Admin from "./page/Admin/Admin";
+import User from "./page/User/User";
 
 const routes = [
     {path:"/" , element:<Home/>},
@@ -24,7 +25,7 @@ const routes = [
     {path:"/Login" , element:<Login/>},
     {path:"/Register" , element:<Register/>},
     {path:"/Admin" , element:<Admin/>},
-    
+    {path:"/User" , element:<User/>},
 ]
 
 export default routes;
