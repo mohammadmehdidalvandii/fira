@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Dashboard from "../../components/template/user/Dashboard";
 import Info from "../../components/template/user/Info";
+import Request from "../../components/template/user/Request";
 
 function User() {
     const [isUserMenu , setIsUserMenu] = useState("dashboard");
@@ -48,7 +49,7 @@ function User() {
         <div className="w-[80%] bg-success p-4 rounded-lg">
             {isUserMenu === "dashboard" && (<Dashboard/>)}
             {isUserMenu === "info" && (<Info/>)}
-            {isUserMenu === "request" && (<h1>request</h1>)}
+            {isUserMenu === "request" && (<Request/>)}
         </div>
       </div>
     </section>
