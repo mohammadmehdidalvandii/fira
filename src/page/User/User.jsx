@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Dashboard from "../../components/template/user/Dashboard";
+import Info from "../../components/template/user/Info";
 
 function User() {
     const [isUserMenu , setIsUserMenu] = useState("dashboard");
@@ -46,7 +47,7 @@ function User() {
         </div>
         <div className="w-[80%] bg-success p-4 rounded-lg">
             {isUserMenu === "dashboard" && (<Dashboard/>)}
-            {isUserMenu === "info" && (<h1>info</h1>)}
+            {isUserMenu === "info" && (<Info/>)}
             {isUserMenu === "request" && (<h1>request</h1>)}
         </div>
       </div>
