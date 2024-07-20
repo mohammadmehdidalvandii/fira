@@ -18,7 +18,7 @@ const routes = [
     {path:"/Services" , element:<Services/>},
     {path:"/Services-D/:id" , element:<ServicesDetails/>},
     {path:"/Project" , element:<Project/>},
-    {path:"/Project-D" , element:<ProjectDetails/>},
+    {path:"/Project-D/:id" , element:<ProjectDetails/>},
     {path:"/Articles" , element:<Articles/>},
     {path:"/Article-D" , element:<ArticleDetails/>},
     {path:"/Contact" , element:<Contact/>},
