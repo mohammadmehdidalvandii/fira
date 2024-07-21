@@ -1,6 +1,20 @@
+import { useEffect, useState } from "react";
 import ArticleCard from "../../../module/ArticleCard/ArticleCard";
 
 function Articles() {
+  const [articles , setArticles] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:3000/articles')
+    .then(res=> res.json())
+    .then(data=>{
+      setArticles(data)
+    })
+    .catch(err=>{
+      console.log("Error =>" , err);
+    });
+  },[])
+
   return (
     <section className="block w-full mt-20">
       <div className="container">
@@ -17,10 +31,9 @@ function Articles() {
           </div>
 
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6">
-            <ArticleCard/>
-            <ArticleCard/>
-            <ArticleCard/>
-        
+            {articles.map(item=>(
+              <ArticleCard key={item.id} {...item}/>        
+            ))}
           </div>
         </div>
       </div>
