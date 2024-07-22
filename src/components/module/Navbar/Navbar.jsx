@@ -149,6 +149,12 @@ function Navbar() {
               >
                 ورود
               </Link>
+              {/* <Link
+                to="/Admin"
+                className="flex items-center justify-center w-[120px] h-10 bg-secondary rounded-lg text-white ease-linear delay-300 hover:bg-primary"
+              >
+                  حساب کاربری
+              </Link> */}
             </div>
           </div>
         </div>
